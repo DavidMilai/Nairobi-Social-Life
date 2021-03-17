@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:nairobi_social_life/widgets/about_user.dart';
 import 'package:nairobi_social_life/widgets/logo_button.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -15,7 +16,7 @@ class AboutAppScreen extends StatefulWidget {
 class _AboutAppScreenState extends State<AboutAppScreen> {
   @override
   Widget build(BuildContext context) {
-    //SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
+    SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
@@ -34,7 +35,7 @@ class _AboutAppScreenState extends State<AboutAppScreen> {
                   SizedBox(height: 5),
                   IconButton(
                       onPressed: () {
-                        // Navigator.pop(context);
+                        Navigator.pop(context);
                       },
                       icon: Icon(
                         Icons.arrow_back_ios,

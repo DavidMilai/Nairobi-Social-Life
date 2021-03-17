@@ -9,7 +9,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   void navigate() {
-    Navigator.pushReplacementNamed(context, RouteConfig.aboutApp);
+    Navigator.pushReplacementNamed(context, RouteConfig.home);
   }
 
   void initDatabase() async {
