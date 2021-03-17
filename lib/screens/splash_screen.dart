@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../routes.dart';
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -7,13 +9,20 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   void navigate() {
-    // Navigator.pushReplacementNamed(context, RouteConfig.login);
+    Navigator.pushReplacementNamed(context, RouteConfig.aboutApp);
   }
 
   void initDatabase() async {
     // await db.init();
     // loadData();
     await Future.delayed(Duration(seconds: 1), navigate);
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    initDatabase();
   }
 
   @override
