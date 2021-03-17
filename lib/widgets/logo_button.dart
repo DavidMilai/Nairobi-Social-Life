@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class LogoButton extends StatelessWidget {
-  LogoButton({this.onTap, this.imageLocation});
+  LogoButton({this.onTap, this.imageLocation, this.height});
   final Function onTap;
   final String imageLocation;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +12,7 @@ class LogoButton extends StatelessWidget {
       onTap: onTap,
       child: Image.asset(
         imageLocation,
+        height: height,
       ),
     );
   }

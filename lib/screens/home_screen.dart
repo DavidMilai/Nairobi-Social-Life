@@ -10,6 +10,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int tab =0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,10 +44,22 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Container(
                 height: 60,
-                child: LogoButton(imageLocation: 'images/movies.png')),
+                child: LogoButton(
+                    onTap: (){
+                      setState(() {
+                        tab = 0;
+                      });
+                    },
+                    imageLocation: 'images/movies.png')),
             Container(
                 height: 60,
-                child: LogoButton(imageLocation: 'images/events.png')),
+                child: LogoButton(
+                    onTap: (){
+                      setState(() {
+                        tab = 1;
+                      });
+                    },
+                    imageLocation: 'images/events.png')),
           ],
         ),
       ),
