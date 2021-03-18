@@ -23,7 +23,7 @@ class DaySelector extends StatelessWidget {
           Text(weekDay, style: TextStyle(color: Colors.white)),
           Text(day,
               style:
-              TextStyle(color: Colors.white, fontWeight: FontWeight.bold))
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold))
         ],
       ),
     );
