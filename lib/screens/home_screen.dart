@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onPressed: () {
                         Navigator.pushNamed(context, RouteConfig.aboutApp);
                       },
-                      icon: Icon(Icons.share_outlined))
+                      icon: Icon(Icons.info_outline))
                 ],
               ),
             ),
@@ -42,15 +42,12 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         bottomNavigationBar: Container(
           height: 65,
-          padding: EdgeInsets.only(
-            left: 20,
-            right: 20,
-          ),
+          padding: EdgeInsets.only(left: 20, right: 20),
           decoration: BoxDecoration(color: Colors.white, boxShadow: [
             BoxShadow(
               offset: Offset(0, -8),
               blurRadius: 35,
-              color: Colors.pinkAccent.withOpacity(0.2),
+              color: Colors.pinkAccent.withOpacity(0.02),
             ),
           ]),
           child: Row(
